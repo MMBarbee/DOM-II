@@ -1,5 +1,7 @@
 // Your code goes here
-//  Nav 
+
+
+/* ----------- NAV -------- */
 let navAnchors = document.querySelectorAll('.nav-link');
 
 navAnchors.forEach(function(index, i){
@@ -17,6 +19,8 @@ navAnchors.forEach(function(index, i){
 });
 
 //
+
+/* ----------- BODY -------- */
 
 window.onscroll = function() {myFunction()};
 
