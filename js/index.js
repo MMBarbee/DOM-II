@@ -37,8 +37,10 @@ function myFunction() {
 let button = document.querySelectorAll('.btn');
 
 button.forEach(function(index, i){
-    button[i].addEventListener('click', function(e) {
+    button[i].addEventListener('mouseenter', function(e) {
         e.target.style.backgroundColor = 'rgba(235,145,229,1)';
         e.target.style.borderRadius = '0px';
     });
 });
+
+/* ----------- FOOTER -------- */
