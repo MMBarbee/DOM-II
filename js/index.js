@@ -20,11 +20,12 @@ navAnchors.forEach(function(index, i){
 });
 
 /*
+
 navAnchors[i].addEventListener("click", function(e){
-    e.preventDefault();
+e.preventDefault();
 });
 
-Why does this code remove all previous event listeners from functioning
+Why does this code remove all other event listeners from functioning?
 */
 
 
