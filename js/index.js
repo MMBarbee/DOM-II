@@ -19,11 +19,13 @@ navAnchors.forEach(function(index, i){
     });
 });
 
-//
+/*
 navAnchors[i].addEventListener("click", function(e){
     e.preventDefault();
 });
 
+Why does this code remove all previous event listeners from functioning
+*/
 
 
 /* ----------- BODY -------- */
@@ -63,3 +65,26 @@ signBtn[2].addEventListener('click', function(event) {
     console.log("Island Getaway button was clicked!");
 });
 
+
+/* ----------- TEXT CONTENT -------- */
+
+const h2s = document.querySelectorAll('h2');
+h2s.forEach(function(element) {
+    element.addEventListener('mouseover', function(event) {
+      event.target.style.fontWeight = 'bold';
+    });
+  });
+
+//
+
+const pTags = document.querySelectorAll('p');
+
+  pTags.forEach(function(element) {
+    element.tabIndex = 1;
+    element.addEventListener('focus', function(event) {
+      event.target.style.backgroundColor = 'white';
+    });
+    element.addEventListener('blur', function(event) {
+      event.target.style.background = '';    
+    });
+  });
