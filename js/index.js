@@ -15,10 +15,16 @@ navAnchors.forEach(function(index, i){
     navAnchors[i].addEventListener('mouseout', function(e) {
         e.target.style.color = '';
         e.target.style.textDecoration = 'none';
+        
     });
 });
 
 //
+navAnchors[i].addEventListener("click", function(e){
+    e.preventDefault();
+});
+
+
 
 /* ----------- BODY -------- */
 
@@ -42,5 +48,18 @@ button.forEach(function(index, i){
         e.target.style.borderRadius = '0px';
     });
 });
+/* ------------------------- */
+const signBtn = document.querySelectorAll('.btn');
 
-/* ----------- FOOTER -------- */
+signBtn[0].addEventListener('click', function(event) {
+
+    console.log("Fun in the sun button was clicked!");
+});
+signBtn[1].addEventListener('click', function(event) {
+    console.log("Mountain Excursion button was clicked!");
+});
+
+signBtn[2].addEventListener('click', function(event) {
+    console.log("Island Getaway button was clicked!");
+});
+
