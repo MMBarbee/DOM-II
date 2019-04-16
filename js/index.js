@@ -25,7 +25,7 @@ navAnchors[i].addEventListener("click", function(e){
 e.preventDefault();
 });
 
-Why does this code remove all other event listeners from functioning?
+Why does this code prevent all other event listeners from functioning?
 */
 
 
